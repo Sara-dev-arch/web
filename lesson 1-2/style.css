@@ -1,0 +1,45 @@
+body {
+	background-color: rgb(236, 192, 236);
+}
+form {
+	margin: 40;
+	padding: 40;
+	border-radius: 10px; 
+	box-shadow: 0 4px 16px rgb(240, 3, 3);
+	background-color: rgb(161, 220, 243);
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	border: 2px solid;
+    box-sizing: border-box;
+	border-radius: 4px;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	border: 2px solid;
+    box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.month input{
+	width: 5%;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: 2px solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
