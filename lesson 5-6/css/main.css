@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=OpenSans&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Oswald';
+	color: black;
+	font-size: 16px;
+}
+
+.menu li a {
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1.94px;
+}
+
+.header {
+	background: url('../img/header_bg.jpg') no-repeat center top / cover;
+	padding-top: 79px;
+	padding-bottom: 19px;
+	color: #fff;
+}
+
+.nav {
+	display:flex; 
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-family: 'Oswald';
+	font-size: 36px;
+	line-height: 30px;
+	color: black;
+	float:left;
+}
+
+.menu {
+	list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+	margin-right: 58px;
+}
+
+.menu a::after {
+  content: "";
+  height: 2px;
+  background: #4CAF50;;
+  display: block;
+  transition: width 0.3s ease-in-out;
+  
+  width: 18px;
+}
+.menu a::after { width: 30%; }
+.menu a:hover::after { width: 100%; }
+
+.header-info {
+	/*margin: 283px 318px 25px 310px;*/
+	/*margin: 283px 0 24px 110px;*/
+	margin-top: 283px;
+	margin-bottom: 355px;
+}
+
+.header-info h1{
+	font-family: Oswald;
+	font-weight: 500;
+	font-size: 72px;
+	letter-spacing: 4.608px;
+	text-align: center;
+}
+
+.header-info h3{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 27px;
+	letter-spacing: 1.28px;
+	text-align: center;
+}
+
+.slide-controls {
+	display:flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel {
+	list-style: none;
+}
+
+.carousel li {
+	display: inline-block;
+	justify-content: center;
+}
+
+.carousel li a {
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 1.152px;
+	color: white;
+	text-decoration: none;
+	opacity: .43;
+}
+
+.carousel li a:hover {
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 53px;
+	text-decoration: none;
+	letter-spacing: 2.304px;
+	color: white;
+	text-decoration: line-through;
+	text-decoration-color: #4CAF50;
+	transition: all .3s;
+	opacity: 1;
+}
+
+.first-section{
+    background-color: #FFFFFF;
+}
+
+.first-section h1 {
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 2.304px;
+    color: #333333;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    z-index: 3;
+}
+
+.first-section h2 {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 57px;
+    letter-spacing: 2.688px;
+
+    color: #504E4E;
+
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    z-index: 3;
+}
+
+.first-section-text {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+
+
+
+    letter-spacing: 1.26px;
+
+
+    color: #5B5858;
+
+
+    width: 25%;
+    height: 30%;
+
+    position: absolute;
+    top: 70%;
+    left: 9%;
+    z-index: 3;
+}
+
+.Image1_first_section{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    margin-top: 15%;
+    left: 19%;
+    z-index: 2;
+}
+
+.green_box{
+    width: 309px;
+    height: 418px;
+        
+    background: #4CAF50;
+    opacity: 0.8;
+
+    position: absolute;
+    top: 45%;
+    left: 36%;
+    z-index: 1;
+}
+
+.Image2_first_section{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 65%;
+    left: 52%;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+.services-bg {
+	background: #F2F2F2;
+    margin-top: 325px;
+}
+.services {
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3.072px;
+
+    color: #252525;
+}
+.services::after{
+    content: "";
+    display: block;
+    width: 44px;
+    background-color: #252525;
+    height: 2px;
+    margin-top: 7px;
+    margin-left: -282px;
+
+}
+.services-table{
+    background: #FFFFFF;
+}
+.services-table::after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #70BF73;
+    height: 3px;
+    margin-top: 10px;
+    transform: scale(0);
+    }
+    
+.services-table:hover:after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #70BF73;
+    height: 3px;
+    margin-top: 10px;
+    transform: scale(1);
+    transition: all .3s;
+}
+.text_table {
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #252525;
+
+    margin-top: 13%;
+    margin-left: 13%;
+}
+
+.text_table::after {
+    content: "";
+    display: block;
+    width: 18px;
+    background-color: #252525;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.grey_text_table {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    /* or 208% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.008px;
+
+    color: #777777;
+}
+.more {
+    
+    margin-bottom: 8%;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+
+    color: #252525;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+.latest_works {
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3.072px;
+
+    color: #252525;
+}
+
+.latest_works::after{
+    content: "";
+    display: block;
+    width: 45px;
+    background-color: #252525;
+    height: 2px;
+    margin-top: 8px;
+    margin-left: -289px;
+}
+
+.latests_works_navbar {
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.832px;
+
+    opacity: 0.3;
+    color: #252525;
+}
+
+.latests_works_navbar:hover:hover {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.832px;
+
+    opacity: 1;
+    color: #252525;
+}
+
+.kitten {
+    margin-top: 10%;
+    width: 455px;
+    height: 444px;
+    background: #F3F4F6;    
+    background: url(../img/kitten.jpg);
+}
+
+.latest_works_header {
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 71px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3.072px;
+
+    color: #252525;
+}
+
+.photo{
+
+    margin-top: 10%;
+    width: 455px;
+    height: 444px;
+    
+    
+    background-image: url(../img/camera.jpg);
+    background-color: #F3F4F6;
+    
+}
+
+.photography {
+
+    margin-top: 5%;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    letter-spacing: 1.152px;
+
+    color: #252525;
+}
+.grey_text_photography {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+
+    display: flex;
+    
+    letter-spacing: 0.832px;
+
+    color: #C2C2C2;
+
+}
+
+.mac {
+
+    margin-top: 10%;
+    width: 455px;
+    height: 444px;
+    background: #F3F4F6;
+    
+    background: url(../img/mac.jpg);
+}
+
+.macbook {
+    margin-top: 10%;
+    width: 455px;
+    height: 444px;
+    background: #F3F4F6;    
+    background: url(../img/macbook.jpg);
+}
+
+.view_more{
+	width: 65px;
+	height: 19px;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 19px;
+	text-align: right;
+	float: right;
+	color: #252525;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-bg {
+	background: #FBFBFB;
+	margin-top: 75px;
+}
+
+.the_team {
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3.072px;
+
+    color: #252525;
+}
+
+.the_team::after{
+    content: "";
+    display: block;
+    width: 44px;
+    background-color: #252525;
+    height: 2px;
+    margin-top: 7px;
+    margin-left: -208px;
+
+}
+
+.tom{
+    width: 370px;
+    height: 398px;
+    background: url(../img/tom.jpg);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.michel {
+
+    width: 370px;
+    height: 398px;
+
+    background: url(../img/michael.jpg);
+}
+
+.n {
+
+    width: 370px;
+    height: 398px;
+
+    background: #D8D8D8;
+
+    background: url(../img/tim.jpg);
+}
+.back_tom {
+
+    width: 100%;
+    height: 50px;
+
+    background-color: #FFFFFF;
+    opacity: 0.5;
+}
+.back_michel {
+
+    height: 140.5px;
+
+    background-color: #FFFFFF;
+    opacity: 0.92;
+}
+.tj {
+
+    margin-top: 110%;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    
+    
+    color: #252525;
+}
+.mcl {
+
+    margin-top: 80%;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    
+    
+    color: #252525;
+}
+.mcl::after{
+    content: "";
+    display: block;
+    width: 44px;
+    background-color: #252525;
+    height: 2px;
+    margin-top: 7px;
+    margin-left:0px;
+
+}
+
+.creative_director {
+
+    width: 324px;
+    height: 27px;
+    
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+
+    letter-spacing: 1.152px;
+
+    color: #252525;
+}
+.grey_block {
+    
+    width: 511px;
+    height: 25px;
+    
+    margin-left: 20%;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+
+    display: flex;
+    letter-spacing: 1.008px;
+
+    color: #777777;
+
+}
+.tim{
+
+    width: 370px;
+    height: 398px;
+
+
+    background: url(../img/tim.jpg);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.grey_bottom_text {
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 31px;
+    
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.896px;
+
+    color: #373737;
+}
+.ninenine {
+
+    width: 20px;
+    height: 20px;
+    left: 575px;
+    top: 124px;
+
+    background: url(../img/99.jpg);
+    mix-blend-mode: normal;
+    opacity: 0.34;
+}
+.DAVID_JAMES{
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    
+
+    color: #373737;
+
+}
+.Web_Design {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #777777;
+}
+.star {
+    width: 15px;
+    height: 15px;
+    
+    
+    background: url(../img/star.jpg);
+    
+}
+.back{
+
+    width: 20px;
+    height: 20px;
+
+    background: url(../img/back.jpg);
+
+}
+.next{
+
+    width: 20px;
+    height: 20px;
+
+    background: url(../img/next.jpg);
+
+}
+.back_white {
+    margin-top: 10%;
+
+    
+    height: 300px;
+
+    background: #FBFBFB;
+}
+.back_green {
+
+    margin-top: 10%;
+    
+    height: 300px;
+
+    background: #70BD59;
+}
+.back_black{
+
+    width: 100%;
+    height: 339px;
+    background: #2E2E2E;
+}   
+.Want {
+    
+    margin-top: 5%;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+
+    
+
+    color: #373737;
+}
+.Amazing{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+
+    color: #373737;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.Contanct {
+    margin-top: 5%;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+}
+.get_in {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+
+    color: #FFFFFF;
+
+    opacity: 0.8;
+}
+
+.darkest_back {
+    height: 58px;
+    background: #252525;
+}
+
+.bottom {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+
+
+
+
+
+    
+    
