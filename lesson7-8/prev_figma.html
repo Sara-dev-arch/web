@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="prev_figma_style.css">
+    <title>Figma layout</title>
+  </head>
+  <body>
+    <!-- Первая страница -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" data-bs-interval="2000" class="active" aria-current="true" aria-label="Slide 1"><p style="position: absolute; z-index: 25;">01</p></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" data-bs-interval="2000" aria-label="Slide 2"><p style="position: absolute; z-index: 25;">02</p></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" data-bs-interval="2000" aria-label="Slide 3"><p style="position: absolute; z-index: 25;">03</p></button>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark nav_options">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#works">WORKS</a>
+                <div id="rectangle_1"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+                <div id="rectangle_4"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">SERVICES</a>
+                <div id="rectangle_4"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">BLOG</a>
+                <div id="rectangle_4"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+                <div id="rectangle_4"></div>
+              </li>
+            </ul>
+        </nav>
+        <div class="container">
+          <div class="jumbotron jumbotron-fluid">
+            <div class="main_label">
+              <p class="main_label_up_text">WHERE THE GREAT IDEAS COME TO LIFE<p>
+              <p class="main_label_down_text">Passionate creative studio helping startups grow their business!</p>
+          </div>
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/background.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/moscow-city.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/workbench.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div>
+
+    <!-- Вторая страница -->
+    <div class="container" style="height: 100%; position: relative;">
+      <a name="about"></a>
+      <div class="row">
+        <div>
+          <p class="we_are">WE ARE</p>
+          <p class="the_sqwd">THE SQWD</p>
+        </div>
+        <div>
+          <div class="rectangle_black" id="rectangle_black_left"></div>
+          <p class="text_second" id="text_second_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="container" style="height: 75%; width: 75%; position: relative;">
+          <div class="rectangle_gray" id="rectangle_gray_left"><img src="images/Bitmap.png"></div>
+          <div class="rectangle_green"></div>
+          <div class="rectangle_gray" id="rectangle_gray_right"><img src="images/Bitmap-2.png"></div>
+        </div>
+        <div>
+          <div class="rectangle_black" id="rectangle_black_right"></div>
+          <p class="text_second" id="text_second_right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Третья страница -->
+    <div style="height: 100%; background: #FBFBFB"><a name="services"></a>
+      <div class="container" style="position: relative;">
+
+        <div class="row">
+          <h1 class="services">Our Services</h1>
+          <div class="big_black_rectangle"></div>
+        </div>
+
+        <div class="row">
+          <div class="mx-auto">
+            <div class="row justify-content-center">
+
+              <div class="service_card">
+                <div class="row ">
+                  <p class="col-xs-10 service_name">BRANDING</p>
+                    <div class="d-flex justify-content-end">
+                      <div class="service_icon justify-content-center"><img src="images/graphic-design.png" class="auto-contain"></div>
+                    </div>
+                </div>
+                <div class="service_rectangle"></div>
+                <div style="padding-top: 15px">
+                  <p class="text_second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <p class="read_more">READ MORE</p>
+                </div>
+              </div>
+
+              <div class="service_card">
+                <div class="row ">
+                  <p class="col-xs-10 service_name">DESIGN</p>
+                    <div class="d-flex justify-content-end">
+                      <div class="service_icon justify-content-center"><img src="images/pencil-case.png" class="auto-contain"></div>
+                    </div>
+                </div>
+                <div class="service_rectangle"></div>
+                <div style="padding-top: 15px">
+                  <p class="text_second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <p class="read_more">READ MORE</p>
+                </div>
+              </div>
+
+              <div class="service_card">
+                <div class="row ">
+                  <p class="col-xs-10 service_name">DEVELOPMENT</p>
+                    <div class="d-flex justify-content-end">
+                      <div class="service_icon justify-content-center"><img src="images/coding.png" class="auto-contain"></div>
+                    </div>
+                </div>
+                <div class="service_rectangle"></div>
+                <div style="padding-top: 15px">
+                  <p class="text_second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <p class="read_more">READ MORE</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Четвертая страница (works)-->
+    <div class="container my-5" style="position: relative; height: 220%;">
+      <a name="works"></a>
+        <div class="row">
+          <h1 class="services">Latest Works</h1>
+          <div class="big_black_rectangle"></div>
+        </div>
+
+        <div style="position: absolute; right: 0; top: 0; margin-top: 5%; margin-right: 7%;"><img src="images/work-camera.png"></div>
+        <div class="work_desc" style="position: absolute; right: 0; top: 0; margin-top: 26%; margin-right: 28%; width: 295px;">100 YEARS PHOTOGRAPHY</div>
+        <div style="position: absolute; right: 0; top: 0; margin-top: 40%; margin-right: 15%; text-align: right; width: 336px">
+          <h6 class="work_header">Photography</h6>
+          <p class="work_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" style="display: inline-block; vertical-align: center; margin-left: 5%; margin-top: 2%">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item" id="nav_all">
+                  <a class="nav-link" href="#">ALL</a>
+                </li>
+                <li class="nav-item" id="nav_rest">
+                  <a class="nav-link" href="#">WEB DESIGN</a>
+                </li>
+                <li class="nav-item" id="nav_rest">
+                  <a class="nav-link" href="#">BRANDING</a>
+                </li>
+                <li class="nav-item" id="nav_rest">
+                  <a class="nav-link" href="#">PHOTOGRAPHY</a>
+                </li>
+                <li class="nav-item" id="nav_rest">
+                  <a class="nav-link" href="#">ILLUSTRATION</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+
+        <div style="position: absolute; left: 0; margin-top: 15%; margin-left: 5%;"><img src="images/work-cat.png"></div>
+        <div class="work_desc" style="position: absolute; left: 0; margin-top: 35%; margin-left: 33%; width: 208px;">A KITTEN'S LIFE</div>
+        <div style="position: absolute; left: 0; top: 0; margin-top: 67%; margin-left: 15%; text-align: left; width: 336px">
+          <h6 class="work_header">Photography</h6>
+          <p class="work_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div style="position: absolute; right: 0; margin-top: 40%; margin-right: 7%;"><img src="images/work-pc.png"></div>
+        <div class="work_desc" style="position: absolute; right: 0; top: 0; margin-top: 77%; margin-right: 20%; width: 406px;">GROOVEMADE PRODUCTS FOR MAC</div>
+        <div style="position: absolute; right: 0; top: 0; margin-top: 92%; margin-right: 15%; text-align: right; width: 336px">
+          <h6 class="work_header">Photography</h6>
+          <p class="work_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div style="position: absolute; left: 0; margin-top: 70%; margin-left: 5%;"><img src="images/work-mac.png"></div>
+        <div class="work_desc" style="position: absolute; left: 0; margin-top: 91%; margin-left: 33%; width: 240px;">APPLE'S LOST MAGIC</div>
+        <div style="position: absolute; left: 0; margin-top: 1390px; margin-left: 15%; text-align: left; width: 336px">
+          <h6 class="work_header">Photography</h6>
+          <p class="work_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <p class="view_more" style="position: absolute; right: 0px; margin-right: 7%; margin-top: 1450px;">view more</p>
+    </div>
+
+    <!-- Пятая страница (team) -->
+    <div style="height: 100%; background: #FBFBFB">
+      <a name="blog"></a>
+      <div class="container" style="position: relative;">
+        <div class="row">
+          <h1 class="services">The Team</h1>
+          <div class="big_black_rectangle"></div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="mx-auto mt-5">
+            <div class="row justify-content-center">
+
+              <div class="photo_card" style="background-image: url(images/tom-jones.png);">
+                <div class="d-flex justify-content-center photo_rectangle"><div class="photo_name">TOM JONES</div></div>
+              </div>
+
+              <div class="photo_card" style="margin-right: 30px; margin-left: 30px; background-image: url(images/creative-director.png);">
+                <div class="d-flex justify-content-center photo_rectangle_center">
+                  <div class="">
+                    <p class="photo_name">MICHAEL FRAUP</p>
+                    <p><div class="big_black_rectangle" style="margin-left: 40%;"></div></p>
+                    <p class="photo_name">Creative Director</p>
+                    <p class="photo_additional_text">Create with simplicity in mind!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="photo_card" style="background-image: url(images/tim-cahill.png)">
+                <div class="d-flex justify-content-center photo_rectangle"><div class="photo_name">TIM CAHILL</div></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Карусель с отзывами -->
+    <div class="container-fluid my-5">
+      <a name="contact"></a>
+      <div class="container">
+        <div class="row">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="col-6 mx-auto pb-5 review">
+                  <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                  <p style="width: 20px; height: 20px; margin: auto;"><img src="images/review-symbol.svg"></p>
+                  <p class="review_author">DAVID JAMES <span class="lead">/ Web Design</span></p>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="images/star.svg">
+                    <img src="images/star.svg">
+                    <img src="images/star.svg">
+                    <img src="images/star.svg">
+                    <img src="images/star-inactive.svg">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="col-6 mx-auto pb-5 review">
+                  <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                  <p style="width: 20px; height: 20px; margin: auto;"><img src="images/review-symbol.svg"></p>
+                  <p class="review_author">ENRIQUE IGLESIAS <span class="lead">/ UX Design</span></p>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="images/star.svg">
+                    <img src="images/star.svg">
+                    <img src="images/star-inactive.svg">
+                    <img src="images/star-inactive.svg">
+                    <img src="images/star-inactive.svg">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-6 mx-auto pb-5 review">
+                  <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                  <p style="width: 20px; height: 20px; margin: auto;"><img src="images/review-symbol.svg"></p>
+                  <p class="review_author">MIKE TYSON <span class="lead">/ Graphics</span></p>
+                  <div style="display: flex; margin: 0 auto;">
+                    <img src="images/star.svg">
+                    <img src="images/star.svg">
+                    <img src="images/star.svg">
+                    <img src="images/star-inactive.svg">
+                    <img src="images/star-inactive.svg">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--  Футер-страница -->
+    <div class="container-fluid">
+      <div class="row" style="height: 300px">
+        <div class="col-xs-6" style="background: #FBFBFB; width: 50%">
+          <div class="contact">
+            <p><img src="images/briefcase.svg"></p>
+            <h3>Want to work together?</h3>
+            <p>Amazing. Tell us about your project!</p>
+            <p><img src="images/next.svg"></p>
+          </div>
+        </div>
+        <div class="col-xs-6" style="background: #70BD59; width: 50%">
+          <div class="contact" style="color: #ffffff">
+            <p><img src="images/mail.svg"></p>
+            <h3>Contact us</h3>
+            <p>Get in touch</p>
+            <p><img src="images/next.svg"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters" style="height: 339px; background: #2E2E2E">
+        <div class="col-xs-12">
+          <div class="contact" style="color: #f2f2f2; margin-top: 3%">
+            <p>3rd Floor, Santa Monica Beach, CA, San Francisco</p>
+            <p>(359) 0 123 456 789 - info@yourmail.com</p>
+            <div>
+              <img src="images/facebook-logo.svg">
+              <img class="mx-2" src="images/twitter-circular-button.svg">
+              <img src="images/pinterest-logo.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="height: 58px; background: #252525">
+        <p class="footer">Copyright 2016 - All Rights Reserved - Designed by JD</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  </body>
+</html>
