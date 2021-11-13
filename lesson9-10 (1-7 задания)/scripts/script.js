@@ -104,5 +104,6 @@ function reverseArrayInPlace(array){
     array[i] = array[array.length - i - 1];
     array[array.length - i - 1] = temp ;
   }
+return array;
 }
-console.log('Функция reverseAreverseArrayInPlacerray:', reverseArray([7,8,9,10]));
+console.log('Функция reverseAreverseArrayInPlacerray:', reverseArrayInPlace([7,8,9,10]));
