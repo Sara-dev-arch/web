@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Timer</title>
+</head>
+<body>
+    <script type="text/babel">
+        class Example extends React.Component {
+        constructor() {
+            super();
+            this.state = { time: {}, seconds: 3600 };
+            this.timer = 0;
+            this.startTimer = this.startTimer.bind(this);
+            this.countDown = this.countDown.bind(this);
+        }
+
+        secondsToTime(secs){
+            let hours = Math.floor(secs / (60 * 60));
+
+            let divisor_for_minutes = secs % (60 * 60);
+            let minutes = Math.floor(divisor_for_minutes / 60);
+
+            let divisor_for_seconds = divisor_for_minutes % 60;
+            let seconds = Math.ceil(divisor_for_seconds);
+
+            let obj = {
+            "h": hours,
+            "m": minutes,
+            "s": seconds
+            };
+            return obj;
+        }
+
+        componentDidMount() {
+            let timeLeftVar = this.secondsToTime(this.state.seconds);
+            this.setState({ time: timeLeftVar });
+        }
+
+        startTimer() {
+            if (this.timer == 0 && this.state.seconds > 0) {
+            this.timer = setInterval(this.countDown, 1000);
+            }
+        }
+
+        countDown() {
+            let seconds = this.state.seconds - 1;
+            this.setState({
+            time: this.secondsToTime(seconds),
+            seconds: seconds,
+            });
+            
+            if (seconds == 0) { 
+            clearInterval(this.timer);
+            }
+        }
+
+        render() {
+            return(
+            <div>
+                <section class="header">
+                    <h1>Не упустите свой шанс!</h1>
+                    <h1>{this.state.time.h}:{this.state.time.m}:{this.state.time.s}</h1>
+                    <a onClick={this.startTimer} class="btn-bgstroke">Начать отсчет</a>
+                </section>
+            </div>
+            );
+        }
+        }
+        ReactDOM.render(
+            <Example/>,
+            document.getElementById("app")
+        )
+    </script>
+    <div id="app"></div>
+
+
+    
+</body>
+</html>
