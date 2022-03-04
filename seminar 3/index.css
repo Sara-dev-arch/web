@@ -1,0 +1,54 @@
+.Button {
+    background: #ECA7C3;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: 24px;
+    height: 20%;
+    min-width: 25%;
+}
+
+.Button[data-size="2"] {
+    height: 40%;
+}
+
+.Button[data-value="null"] {
+    pointer-events: none;
+}
+
+.Button:hover {
+    background: #ECBACE;
+    cursor: default;
+}
+
+.Display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #2b293d;
+    height: 20%;
+    color: #D985A7;
+    font-size: 24px;
+}
+.Keypad {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Calculator {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin: 25px;
+}

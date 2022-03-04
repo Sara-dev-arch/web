@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello React</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <script type="text/babel">
+        class Button extends React.Component{
+            render(){
+                return (
+                    <div 
+                        className="Button"
+                        onClick={this.props.onClick}
+                        data-size={this.props.size}
+                        data-value={this.props.value}>
+                        {this.props.label}
+                    </div>
+                );
+            }
+        }
+        class Display extends React.Component {
+            render(){
+                return(
+                    <div className="Display">
+                        {this.props.data}
+                    </div>
+                );
+            }
+        }
+        class Keypad extends React.Component {
+            render(){
+                return(
+                    <div className="Keypad">
+                        {this.props.children}
+                    </div>
+                );
+            }
+        }
+        class Calculator extends React.Component {
+            constructor() {
+                super();
+                this.state = { data: ''}
+            }
+
+            calculate = () => {
+                try {
+                    const result = eval(this.state.data);
+                    this.setState({data: result});
+                } catch (e) {
+                    this.setState({data: 'error'})
+                }
+            }
+
+            handleClick = e => {
+                const value = e.target.getAttribute('data-value');
+                switch(value) {
+                    case 'clear':
+                        this.setState({ data: ''});
+                        break;
+                    case 'equal':
+                        this.calculate();
+                        break;
+                    default:
+                        this.setState({ data: this.state.data + value});
+                }
+            }
+            render(){
+                return(
+                    <div className="Calculator">
+                        <Display data={this.state.data}/>
+                        <Keypad>
+                            <Button onClick={this.handleClick} label="C" value="clear" />
+                            <Button onClick={this.handleClick} label="7" value="7" />
+                            <Button onClick={this.handleClick} label="4" value="4" />
+                            <Button onClick={this.handleClick} label="1" value="1" />
+                            <Button onClick={this.handleClick} label="0" value="0" />
+
+                            <Button onClick={this.handleClick} label="/" value="/" />
+                            <Button onClick={this.handleClick} label="8" value="8" />
+                            <Button onClick={this.handleClick} label="5" value="5" />
+                            <Button onClick={this.handleClick} label="2" value="2" />
+                            <Button onClick={this.handleClick} label="." value="." />
+
+                            <Button onClick={this.handleClick} label="x" value="*" />
+                            <Button onClick={this.handleClick} label="9" value="9" />
+                            <Button onClick={this.handleClick} label="6" value="6" />
+                            <Button onClick={this.handleClick} label="3" value="3" />
+                            <Button onClick={this.handleClick} label="" value="null" />
+
+                            <Button onClick={this.handleClick} label="-" value="-" />
+                            <Button onClick={this.handleClick} label="+" size="2" value="+" />
+                            <Button onClick={this.handleClick} label="=" size="2" value="equal" />
+                        </Keypad>
+                    </div>
+                );
+            }
+        }
+        ReactDOM.render(
+            <Calculator/>,
+            document.getElementById("Calculator")
+        );
+    </script>
+
+    <div id="Calculator"> </div>
+
+</body>
+</html>
